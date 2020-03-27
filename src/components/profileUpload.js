@@ -23,7 +23,8 @@ class ProfileUpload extends Component {
     }
 
     fileUploader = () => {
-        axios.post()
+        // Trying to find a good POST endpoint to use here, imgur is the best I can come up with on short notice. However, this doesn't seem to work.
+        axios.post("https://api.imgur.com/3/upload")
             .then(response => {
                 console.log(response);
             })
@@ -36,17 +37,8 @@ class ProfileUpload extends Component {
         var userText = document.getElementById("#textArea").val;
         // console.log(userText);
         // let userPic = "haha";
-
-
-
-
-
     }
     
-
-
-
-
   render() {
     return (
         // <div className="App">
@@ -67,13 +59,13 @@ class ProfileUpload extends Component {
 
             <button type="button" onClick={this.fileUploader}>Upload File</button>
 
-            {/* <Form.Label>Your Name</Form.Label>
+            <Form.Label>Your Name</Form.Label>
             <Form.Control type="text" placeholder="Name" />
             <Form.Group controlId="exampleForm.ControlTextArea1">
                 <Form.Label>Tell us about yourself!</Form.Label>
                 <Form.Control id="textArea" rows="3" />
             </Form.Group>
-            <button type="button" onClick={this.uploadAll}>Upload Profile</button> */}
+            <button type="button" onClick={this.uploadAll}>Upload Profile</button>
         </Form>
     );
   }
