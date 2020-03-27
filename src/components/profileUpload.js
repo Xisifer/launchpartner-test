@@ -23,11 +23,10 @@ class ProfileUpload extends Component {
     }
 
     fileUploader = () => {
-        // Trying to find a good POST endpoint to use here, imgur is the best I can come up with on short notice. However, this doesn't seem to work.
-        axios.post("https://api.imgur.com/3/upload")
-            .then(response => {
-                console.log(response);
-            })
+        // axios.post("mycustomAPIendpointGOESHERE")
+        //     .then(response => {
+        //         console.log(response);
+        //     })
     }
 
 

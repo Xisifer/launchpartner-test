@@ -10,6 +10,8 @@ class App extends Component {
   componentWillMount() {
     // Ideally, here we should make an Axios call, and grab the user data from the database. Probably using sequelize.
 
+    
+
     // Concentrate on the Name and Description before the Image.
     // I need to BUILD the API.
     // Port on the machine, and there's a URL that's available on ht eWWW.
