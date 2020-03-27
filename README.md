@@ -1,68 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# launchpartner-test
+Mini Coding Project done as a test of ability for LaunchPartner.
 
-## Available Scripts
+# Difficulties
+This took significantly longer than just 4 hours (as optimistically outlined in the design doc). I had difficulty finding a hosting solution that could be used with Heroku that could host user-uploaded images, for starters. First I looked into whether MySQL could hold images (turns out it can, but only up to 1MB in size), but then I started planning out where we need to make the calls to pass the data down to the child components and realized the data handoffs might be more complicated than I expected.
 
-In the project directory, you can run:
+Aside from being rusty, this exercise has revealed to me that my overall coding style is rather on the slow side of things. I understand what it is I need to do, but executing on that is slow and painstaking and involves a lot of debugging and research and Googling and etc.
 
-### `npm start`
+In the end, I decided to do a bit of re-prioritizing and re-orient the image uploading, the part I'm least confident on, to the last, and just focus on getting the custom API creation working, and getting the backend up and talking for the Name and Description.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Historically, on group projects, I typically volunteered to work on the Front End sections of the app, since I find it easier to work on and visualize things that I can see instead of grappling with more abstract data-forms. This has come back to bite me, since my backend skills have become somewhat rusty, and needing to produce a fully working Full Stack app in 48 hours is proving to be a daunting task.
